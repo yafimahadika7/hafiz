@@ -46,7 +46,7 @@ let wordProgress = document.querySelector(".word"),
   wordValue = document.querySelector(".word-progress");
 
 let wordStartValue = 0,
-  wordEndValue = 35,
+  wordEndValue = 80,
   wordspeed = 30;
 
 let progressword = setInterval(() => {
