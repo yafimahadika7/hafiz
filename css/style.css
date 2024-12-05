@@ -182,18 +182,21 @@ body{
 .javascript-progress{
     color: #6f34fe;
 }
-.cloud-progress{
+.word-progress{
     color: #20c997;
 }
 .kotlin-progress{
     color: #3f396d;
 }
+
 .text{
     font-size: 1.2rem;
     font-weight: 500;
+    text-align: left;
 }
 .heading p{
     font-size: 1.3rem;
+    
 }
 
 /* portfolio section starts */

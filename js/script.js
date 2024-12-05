@@ -41,26 +41,26 @@ let progressjs = setInterval(() => {
   }
 }, jsspeed);
 
-// cloud progress circular bar 
-let cloudProgress = document.querySelector(".cloud"),
-  cloudValue = document.querySelector(".cloud-progress");
+// word & excel progress circular bar 
+let wordProgress = document.querySelector(".word"),
+  wordValue = document.querySelector(".word-progress");
 
-let cloudStartValue = 0,
-  cloudEndValue = 35,
-  cloudspeed = 30;
+let wordStartValue = 0,
+  wordEndValue = 35,
+  wordspeed = 30;
 
-let progresscloud = setInterval(() => {
-  cloudStartValue++;
+let progressword = setInterval(() => {
+  wordStartValue++;
 
-  cloudValue.textContent = `${cloudStartValue}%`;
-  cloudProgress.style.background = `conic-gradient(#20c997 ${
-    cloudStartValue * 3.6
+  wordValue.textContent = `${wordStartValue}%`;
+  wordProgress.style.background = `conic-gradient(#20c997 ${
+    wordStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (cloudStartValue == cloudEndValue) {
-    clearInterval(progresscloud);
+  if (wordStartValue == wordEndValue) {
+    clearInterval(progressword);
   }
-}, cloudspeed);
+}, wordspeed);
 
 // Kotlin & XML progress circular bar 
 let kotlinProgress = document.querySelector(".kotlin"),
