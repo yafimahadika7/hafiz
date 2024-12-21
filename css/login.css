@@ -15,7 +15,8 @@ html, body {
     background-image: url(../images/backun2.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
+    
 }
 
 
@@ -83,6 +84,7 @@ form {
     padding: 0 5px;
     transform: translateY(-50%);
 }
+
 
 .content {
     display: flex;

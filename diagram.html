@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Penjualan Interaktif</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <link rel="stylesheet" href="css/diagram.css">
+   <link rel="icon" href="./images/iconWeb.png" type="omanixIcon">
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Laporan Penjualan Interaktif</h1>
+
+    <!-- Tabel Data -->
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" id="reset" title="Tampilkan Seluruh Bulan"></th>
+                <th colspan="13">Bulan</th>
+
+            </tr>
+            <tr>
+
+                <th class="month-button" onclick="updateChart(0)">Januari</th>
+                <th class="month-button" onclick="updateChart(1)">Februari</th>
+                <th class="month-button" onclick="updateChart(2)">Maret</th>
+                <th class="month-button" onclick="updateChart(3)">April</th>
+                <th class="month-button" onclick="updateChart(4)">Mei</th>
+                <th class="month-button" onclick="updateChart(5)">Juni</th>
+                <th class="month-button" onclick="updateChart(6)">Juli</th>
+                <th class="month-button" onclick="updateChart(7)">Agustus</th>
+                <th class="month-button" onclick="updateChart(8)">September</th>
+                <th class="month-button" onclick="updateChart(9)">Oktober</th>
+                <th class="month-button" onclick="updateChart(10)">November</th>
+                <th class="month-button" onclick="updateChart(11)">Desember</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023</td>
+                <td>4,017</td>
+                <td>6,135</td>
+                <td>7,091</td>
+                <td>5,841</td>
+                <td>5,036</td>
+                <td>4,547</td>
+                <td>3,467</td>
+                <td>3,970</td>
+                <td>6,313</td>
+                <td>3,595</td>
+                <td>9,207</td>
+                <td>5,945</td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>2,416</td>
+                <td>4,136</td>
+                <td>7,935</td>
+                <td>8,004</td>
+                <td>9,505</td>
+                <td>5,026</td>
+                <td>6,108</td>
+                <td>6,343</td>
+                <td>9,404</td>
+                <td>9,280</td>
+                <td>9,287</td>
+                <td>8,689</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Diagram Chart -->
+    <div class="chart-container">
+        <canvas id="salesChart"></canvas>
+    </div>
+<script src="js/diagram.js"></script>
+</body>
+
+</html>

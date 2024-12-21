@@ -168,3 +168,19 @@ function sendMessage() {
   // Open WhatsApp link
   window.open(whatsappURL, "_blank");
 }
+
+// Tangkap semua tombol dengan kelas 'view-image'
+const viewButtons = document.querySelectorAll('.view-image');
+const modalImage = document.getElementById('modalImage');
+
+viewButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    // Ambil URL gambar dari atribut data-img-src
+    const imgSrc = this.getAttribute('data-img-src');
+    modalImage.src = imgSrc; // Ubah src gambar di modal
+  });
+});
+
+  
+
+
