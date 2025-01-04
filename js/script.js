@@ -181,6 +181,27 @@ viewButtons.forEach(button => {
   });
 });
 
-  
+document.querySelectorAll(".filter-btn").forEach(button => {
+  button.addEventListener("click", function () {
+    const filter = this.id; // Get the ID of the clicked button dynamically
+
+    // Select all posts
+    const posts = document.querySelectorAll(".post");
+
+    posts.forEach(post => {
+      // Show all posts if filter is 'all'
+      if (filter === "all") {
+        post.style.display = "block";
+      } else if (post.classList.contains(filter)) {
+        // Show posts matching the filter
+        post.style.display = "block";
+      } else {
+        // Hide posts not matching the filter
+        post.style.display = "none";
+      }
+    });
+  });
+});
+
 
 
